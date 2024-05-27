@@ -1,0 +1,213 @@
+
+
+
+body 
+{
+	font-family: Verdana, sans-serif;
+    background-color: #3f280d;
+    overflow-x: hidden;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#header 
+{
+    background-color: #006400; 
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+}
+
+#menu 
+{
+    background-color: #008000; 
+    padding: 10px;
+}
+
+#menu ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li 
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+#menu ul li a 
+{
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu ul li a:hover 
+{
+    background-color: #004d00; 
+}
+
+#main
+{
+	background-color: FireBrick;
+	border-top: 8px ridge rgb(86, 16, 16);
+	border-bottom: 8px ridge rgb(86, 16, 16);
+	text-align: center;
+}
+
+#setas
+{
+	height: 5vw;
+	width: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#esquerda
+{
+	float: left;
+}
+
+#direita
+{
+	float: left;
+}
+
+#meio
+{
+	float: left;
+	width: 7vw;
+}
+
+#contador
+{
+	float: inherit;
+	margin: 0px;
+	color: white;
+	width: 7vw;
+	font-size: 3vw;
+}
+
+#setaEsquerda
+{
+	width: 4vw;
+}
+
+#setaDireita
+{
+	width: 4vw;
+}
+
+#imagens
+{
+	box-sizing: border-box;
+	display: inline-block;
+	height: 32vw;
+	
+}
+
+#img1
+{
+	height: 30vw;
+	border: 8px ridge Peru;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vw;
+	animation-fill-mode: forwards;
+	position: relative;
+	display: block;
+	box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+#img2
+{
+	height: 30vw;
+	bottom: 110%;
+	right: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px ridge Peru;
+	display: block;
+	margin-bottom: 5vw;
+	animation-fill-mode: forwards;
+	position: relative;
+	box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4);
+	
+}
+
+#spacing
+{
+	margin: 0px;
+	height: 2vh;
+}
+
+@keyframes desaparecerEsquerda
+{
+	0% 		{transform: scale(1, 1); right: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4);}
+	25%		{transform: scale(0.7, 0.7); right: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.8);}
+	100% 	{transform: scale(0.7, 0.7); right: 100vw; box-shadow: -5vw 1vw 10px 10px rgba(0, 0, 0, 0.8);}
+}
+
+@keyframes desaparecerDireita
+{
+	0% 		{transform: scale(1, 1); right: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4);}
+	25%		{transform: scale(0.7, 0.7); left: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.8)}
+	100% 	{transform: scale(0.7, 0.7); left: 100vw; box-shadow: 5vw 1vw 10px 10px rgba(0, 0, 0, 0.8)}
+}
+
+@keyframes aparecerEsquerda
+{
+	0% 		{transform: scale(0.7, 0.7); right: 100vw;   box-shadow: -5vw 1vw 10px 10px rgba(0, 0, 0, 0.8);}
+	75%		{transform: scale(0.7, 0.7); right: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.8)}
+	100% 	{transform: scale(1, 1); right: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4)}
+}
+
+@keyframes aparecerDireita
+{
+	0% 		{transform: scale(0.7, 0.7); left: 100vw;   box-shadow: -5vw 1vw 10px 10px rgba(0, 0, 0, 0.8);}
+	75%		{transform: scale(0.7, 0.7); left: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.8)}
+	100% 	{transform: scale(1, 1); left: 0vw;   box-shadow: 0px 1vw 10px 10px rgba(0, 0, 0, 0.4)}
+}
+
+@keyframes bounce
+{
+	0%   {transform: scale(1, 1);}
+	50%  {transform: scale(0.7, 0.7);}
+	100% {transform: scale(1, 1);}
+}
+
+#titulo
+{
+	margin: 0px;
+	font-size: 9vmin;
+	color: white;
+	text-shadow: 0 0 8px black;
+}
+
+#bolha
+{
+	padding: 20px;
+	margin: 20px;
+	background-color: rgba(112, 128, 144, 0.6);
+	border: 1px solid rgb(112, 128, 144);
+	border-radius: 60px;
+	display: inline-block;
+	
+}
+
+#info
+{
+	font-size: 4vmin;
+	color: white;
+}
